@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"example.com/bank/fileio"
+	"github.com/Pallinder/go-randomdata"
 )
 
 func main() {
@@ -16,9 +17,12 @@ func main() {
 		// panic("Can't continue, sorry.")
 	}
 
-	printInfomation()
+	fmt.Println("Welcome to Go Bank!")
+	fmt.Println("Reach us 24/7 " + randomdata.PhoneNumber())
 
 	for {
+
+		printInfomation()
 
 		var choice int
 		fmt.Print("Your choice: ")
